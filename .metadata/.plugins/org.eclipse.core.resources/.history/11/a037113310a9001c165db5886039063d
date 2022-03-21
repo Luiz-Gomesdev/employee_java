@@ -1,0 +1,32 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Employee;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		Employee em = new Employee();
+		
+		System.out.print("Enter the number of employees: ");
+		int n = sc.nextInt();
+		
+		for (int i=1; i<n; i++) {
+		System.out.println("Employe #" + i + " data: ");
+		System.out.print("Outsourced (y/n)? ");
+//		char out = sc.
+		System.out.print("Name: ");
+		em.setName(sc.nextLine());
+		}
+		
+		
+		sc.close();
+	}
+
+}
